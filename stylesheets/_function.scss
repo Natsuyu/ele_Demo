@@ -1,0 +1,87 @@
+@mixin transform($value...)
+{
+	transform:$value;
+	-o-transform:$value;
+	-webkit-transform:$value;
+	-ms-transform:$value;
+	-moz-transform:$value;
+}
+@mixin transition($value...)
+{
+	transition:$value;
+	-o-transition:$value;
+	-webkit-transition:$value;
+	-ms-transition:$value;
+	-moz-transition:$value;
+}
+@mixin animation($value...)
+{
+	animation:$value;
+	-o-animation:$value;
+	-webkit-animation:$value;
+	-ms-animation:$value;
+	-moz-animation:$value;
+}
+@mixin transform-origin($value...)
+{
+	transform-origin:$value;
+	-o-transform-origin:$value;
+	-webkit-transform-origin:$value;
+	-ms-transform-origin:$value;
+	-moz-transform-origin:$value;
+}
+@mixin transform-style($value...)
+{
+	transform-style:$value;
+	-o-transform-style:$value;
+	-webkit-transform-style:$value;
+	-ms-transform-style:$value;
+	-moz-transform-style:$value;
+}
+@mixin perspective($value)
+{
+	perspective:$value;
+	-o-perspective:$value;
+	-webkit-perspective:$value;
+	-ms-perspective:$value;
+	-moz-perspective:$value;
+}
+@mixin perspective-origin($value...)
+{
+	perspective-origin:$value;
+	-o-perspective-origin:$value;
+	-webkit-perspective-origin:$value;
+	-ms-perspective-origin:$value;
+	-moz-perspective-origin:$value;
+}
+@mixin box-sizing($value)
+{
+	box-sizing:$value;
+	-o-box-sizing:$value;
+	-webkit-box-sizing:$value;
+	-ms-box-sizing:$value;
+	-moz-box-sizing:$value;
+}
+@mixin keyframes($name)
+{
+	@-webkit-keyframes #{$name}
+	{
+		@content;
+	}
+	@-ms-keyframes #{$name}
+	{
+		@content;
+	}
+	@-mos-keyframes #{$name}
+	{
+		@content;
+	}
+	@-o-keyframes #{$name}
+	{
+		@content;
+	}
+	@keyframes #{$name}
+	{
+		@content;
+	}
+}
